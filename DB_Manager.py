@@ -4,15 +4,15 @@ from sqlite3 import Error
 
 
 class DBManager:
-    def __init__(self):
+    # initialize connection to data base and set object conn
+    def __init__(self, db_name):
         try:
-            conn = sqlite3.connect("\DB\database.db") # this isn't working figure this out next time
+            conn = sqlite3.connect(db_name) # this isn't working figure this out next time
             print(sqlite3.version)
+            self.conn = conn
         except Error as e:
             print(e)
-        finally:
-            conn.close()
 
 
-db = DBManager()
+db = DBManager('C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\DB\database.db')
 
