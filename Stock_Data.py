@@ -29,11 +29,13 @@ class StockData:
             close_price = data[time_stamp]['4. close']
             self.open_price_list.append(open_price)
             self.time_stamps.append(time_stamp)
-            print(open_price)
+            #print(open_price)
 
     def plot(self):
         plt.scatter(self.time_stamps, self.open_price_list)
-        plt.show() # its plotting but there is no way it's right
+        plt.show()  # its plotting but there is no way it's right, it's almost plotting in order, which isn't right
+        # plot looks right in excel, probably going to have to find a better plot tool
+
 
 stock = StockData("TSLA", "15min")
 stock.clean_stock_data(stock.get_stock_data())

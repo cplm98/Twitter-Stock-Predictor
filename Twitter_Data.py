@@ -12,7 +12,7 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-search_results = api.search(q='tesla', count=100)  # filter by language too to improve sentiment analysis
+search_results = api.search(q='tesla', count=100, tweet_mode='extended')  # filter by language too to improve sentiment analysis
 
 # think about maybe having a list of keywords to search through
 # also tweets from the company itself
@@ -20,4 +20,4 @@ search_results = api.search(q='tesla', count=100)  # filter by language too to i
 # and generating a weighting of some sort
 
 for i in search_results:
-    print(i.text, '\n')
+    print(i.full_text, '\n')
