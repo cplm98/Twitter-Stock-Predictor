@@ -15,14 +15,14 @@ class DBManager:
 
     def create_tables(self):
         self.c.execute("CREATE TABLE IF NOT EXISTS Tweets(tweet_body TEXT, retweets INTEGER, "
-                  "favourites INTEGER, verified BOOLEAN, follower_count INTEGER, sentiment TEXT, confidence INTEGER)") #convert confidence into an int
+                  "favourites INTEGER, verified BOOLEAN, follower_count INTEGER, sentiment_confidence INTEGER)") #convert confidence into an int
         # c.execute("CREATE TABLE IF NOT EXISTS Stock_Data") don't know what data I'm gonna use yet
         self.conn.commit()
 
-    def store_tweet(self, data_list):  # tweet_body, retweets, favourites, verified, follower_count, sentiment, confidence):
+    def store_tweet(self, data_list):  # tweet_body, retweets, favourites, verified, follower_count, sentiment_confidence):
         for data in data_list:
             if not self.tweet_exists(data[0]):
-                self.c.execute("INSERT INTO Tweets VALUES(?, ?, ?, ?, ?, ?, ?)", (data[0], data[1], data[2], data[3], data[4], data[5], data[6]))
+                self.c.execute("INSERT INTO Tweets VALUES(?, ?, ?, ?, ?, ?)", (data[0], data[1], data[2], data[3], data[4], data[5]))
             else:
                 print("duplicate")
         self.conn.commit()

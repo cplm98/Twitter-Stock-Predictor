@@ -21,3 +21,13 @@ search_results = api.search(q='tesla', count=100, tweet_mode='extended')  # filt
 
 for i in search_results:
     print(i.full_text, '\n')
+
+
+class TwitterData:
+    def __init__(self, consumer_key, consumer_secret, access_token, access_token_secret):
+        self.auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+        self.auth.set_access_token(access_token, access_token_secret)
+        self.api = tweepy.API(self.auth)
+
+    def twitter_search(self, kw, count):
+        search_results = api.search(q=kw, count=count, tweet_mode="extended")
