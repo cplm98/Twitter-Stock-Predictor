@@ -26,7 +26,7 @@ class SentimentAnalysis:
             polarity_confidence = int(100*sentiment['polarity_confidence'])
         return polarity_confidence
 
-analysis = SentimentAnalysis(app_id, api_key)
-print(analysis.analyse('John is a mediocre football player'))
+# analysis = SentimentAnalysis(app_id, api_key)
+# print(analysis.analyse('John is a mediocre football player'))
 # looks pretty usable, this should be fun
 # output = {'polarity_confidence': 0.9580259323120117, 'polarity': 'positive', 'subjectivity': 'subjective', 'subjectivity_confidence': 0.6145903344515379, 'text': 'John is a great football player'}
