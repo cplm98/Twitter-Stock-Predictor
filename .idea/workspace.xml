@@ -4,6 +4,8 @@
     <list default="true" id="2f45a64b-cade-46fc-a1be-8e8397685e1a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/DB/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DB_Manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/DB_Manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sentiment_Analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sentiment_Analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Twitter_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Twitter_Data.py" afterDir="false" />
     </list>
@@ -19,7 +21,7 @@
       <file leaf-file-name="Stock_Data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stock_Data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="217">
               <caret line="36" column="86" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
             </state>
           </provider>
@@ -28,8 +30,8 @@
       <file leaf-file-name="DB_Manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DB_Manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="90">
+              <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="e#35#49#0" expanded="true" />
               </folding>
@@ -37,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Twitter_Data.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Twitter_Data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Twitter_Data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+            <state relative-caret-position="883">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -49,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sentiment_Analysis.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Sentiment_Analysis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sentiment_Analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="44" />
+            <state relative-caret-position="119">
+              <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -76,6 +78,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -85,9 +92,12 @@
         <option value="$PROJECT_DIR$/Tensor_Flow.py" />
         <option value="$PROJECT_DIR$/sh.exe.stackdump" />
         <option value="$PROJECT_DIR$/Stock_Data.py" />
-        <option value="$PROJECT_DIR$/DB_Manager.py" />
         <option value="$PROJECT_DIR$/Sentiment_Analysis.py" />
+        <option value="$PROJECT_DIR$/twitterData2.csv" />
+        <option value="$PROJECT_DIR$/Create_Sentiment_for_320" />
+        <option value="$PROJECT_DIR$/320_Sentiment.py" />
         <option value="$PROJECT_DIR$/Twitter_Data.py" />
+        <option value="$PROJECT_DIR$/DB_Manager.py" />
       </list>
     </option>
   </component>
@@ -102,7 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,6 +128,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,6 +143,11 @@
       </console-settings>
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -146,6 +161,24 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.Twitter_Data">
+    <configuration name="Create_Sentiment_for_320" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Twitter-Stock-Predictor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Create_Sentiment_for_320" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="DB_Manager" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Twitter-Stock-Predictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -200,24 +233,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Tensor_Flow" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Twitter-Stock-Predictor" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\venv\Scripts\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tensor_Flow.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="Twitter_Data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Twitter-Stock-Predictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -259,15 +274,15 @@
       <item itemvalue="Python.Twitter_Data" />
       <item itemvalue="Python.Sentiment_Analysis" />
       <item itemvalue="Python.DB_Manager" />
-      <item itemvalue="Python.Tensor_Flow" />
+      <item itemvalue="Python.Create_Sentiment_for_320" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Twitter_Data" />
-        <item itemvalue="Python.Sentiment_Analysis" />
         <item itemvalue="Python.DB_Manager" />
+        <item itemvalue="Python.Create_Sentiment_for_320" />
+        <item itemvalue="Python.Sentiment_Analysis" />
         <item itemvalue="Python.Stock_Data" />
-        <item itemvalue="Python.Tensor_Flow" />
       </list>
     </recent_temporary>
   </component>
@@ -279,10 +294,10 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24982156" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34822804" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36363637" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32973805" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990755" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -302,7 +317,8 @@
     <MESSAGE value="Connected twitter api, and Aylien api, got both basic tests working. Started trying to create DBManager, &quot;unable to open database file&quot;, investigate next time" />
     <MESSAGE value="Got db storing tweets the way I want it too, fixed local version of project too." />
     <MESSAGE value="built sentiment analysis class, started creating twitter data class" />
-    <option name="LAST_COMMIT_MESSAGE" value="built sentiment analysis class, started creating twitter data class" />
+    <MESSAGE value="Finished twitter class, uses sentiment analysis and returns list of tupled important twitter info that's ready to be stored in the db." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished twitter class, uses sentiment analysis and returns list of tupled important twitter info that's ready to be stored in the db." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Stock_Data.py">
@@ -596,6 +612,33 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sh.exe.stackdump" />
+    <entry file="file://$PROJECT_DIR$/twitterData2.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Create_Sentiment_for_320">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/320_Sentiment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Stock_Data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="36" column="86" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tensor_Flow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -603,37 +646,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Stock_Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="36" column="86" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DB_Manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="90">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="e#35#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sentiment_Analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Twitter_Data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+        <state relative-caret-position="883">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sentiment_Analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="43" lean-forward="true" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
         </state>
       </provider>
     </entry>
