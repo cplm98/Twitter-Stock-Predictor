@@ -1,16 +1,7 @@
 import tweepy
 import Sentiment_Analysis as sa
 from DB_Manager import DBManager
-
-consumer_key = 'e20lS17XD24p34Rkip05M1XVK'
-consumer_secret = 'Ztzyj6uL3R9ZjnOlbBQb2BJXoA7e3shrFH4cWwjkmTakBAiwDa'
-
-access_token = '926753834-rE0JqvStEzQG7Xb8DwsZgM9bhxz3BQnGET7f4Brl'
-access_token_secret = 'LvQO2gCWcEvqfZephAjuOZYdE2Hd4BYrUDhcVAMAIQ5VO'
-
-app_id = 'd1c45467'
-api_key = 'c55e70ee5c6921d841acf19db193c87b'
-
+import config
 
 # think about maybe having a list of keywords to search through
 # also tweets from the company itself
@@ -19,7 +10,8 @@ api_key = 'c55e70ee5c6921d841acf19db193c87b'
 
 
 class TwitterData:
-    def __init__(self, consumer_key, consumer_secret, access_token, access_token_secret):
+    def __init__(self, consumer_key, consumer_secret, access_token, access_token_secret, ay_app_id, ay_api_key):
+        self.sentiment_analysis = sa.SentimentAnalysis(ay_app_id, ay_api_key)
         self.twitter_data_list = []
         self.auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
         self.auth.set_access_token(access_token, access_token_secret)
@@ -31,7 +23,6 @@ class TwitterData:
 
     # gets relevant data from search result and add it to the data list
     def clean_data(self):
-        sentiment_analysis = sa.SentimentAnalysis(app_id, api_key)
         for result in self.search_results:
             tweet_body = result.full_text
             time_stamp = str(result.created_at)
@@ -43,14 +34,15 @@ class TwitterData:
             favourites = int(result.favorite_count)
             verified = result.user.verified
             followers = result.user.followers_count
-            polarity_confidence = sentiment_analysis.analyse(tweet_body)
+            polarity_confidence = self.sentiment_analysis.analyse(tweet_body)
             self.twitter_data_list.append((time_stamp, tweet_id, user_id, username, tweet_body, retweets, favourites, verified, followers, polarity_confidence))
 
-            #print("\n", tweet_body)
+            print("\n", tweet_body)
 
 
-twitter = TwitterData(consumer_key, consumer_secret, access_token, access_token_secret)
-twitter.twitter_search('TSLA', 100)
+twitter = TwitterData(config.twitter_consumer_key, config.twitter_consumer_secret, config.twitter_access_token,
+                      config.twitter_access_token_secret, config.aylien_app_id, config.aylien_api_key)
+twitter.twitter_search('TSLA', 25)  # I think I run into aylien rate limits if I do more than 25 at a time
 twitter.clean_data()
 db = DBManager('C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\DB\database.db')
 db.create_tables()

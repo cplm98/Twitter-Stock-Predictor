@@ -16,7 +16,7 @@ class DBManager:
     def create_tables(self):
         self.c.execute("CREATE TABLE IF NOT EXISTS Tweets(time_stamp STRING, tweet_id STRING, user_id STRING, username String, tweet_body TEXT, retweets INTEGER, "
                        "favourites INTEGER, verified BOOLEAN, follower_count INTEGER, sentiment_confidence INTEGER)")  # convert confidence into an int
-        c.execute("CREATE TABLE IF NOT EXISTS Stock_Data(time_stamp STRING, close_price INTEGER)") #don't know what data I'm gonna use yet
+        #c.execute("CREATE TABLE IF NOT EXISTS Stock_Data(time_stamp STRING, close_price INTEGER)") #don't know what data I'm gonna use yet
         self.conn.commit()
 
     def store_tweet(self, data_list):  # tweet_body, retweets, favourites, verified, follower_count, sentiment_confidence):
