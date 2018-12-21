@@ -1,6 +1,6 @@
 import tweepy
-import Sentiment_Analysis as sa
-from DB_Manager import DBManager
+from app import Sentiment_Analysis as sa
+from app.DB_Manager import DBManager
 import config
 
 # think about maybe having a list of keywords to search through
@@ -44,7 +44,7 @@ twitter = TwitterData(config.twitter_consumer_key, config.twitter_consumer_secre
                       config.twitter_access_token_secret, config.aylien_app_id, config.aylien_api_key)
 twitter.twitter_search('TSLA', 25)  # I think I run into aylien rate limits if I do more than 25 at a time
 twitter.clean_data()
-db = DBManager('C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\DB\database.db')
+db = DBManager(r'C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\app\DB\database.db')
 db.create_tables()
 db.store_tweet(twitter.twitter_data_list)
 
