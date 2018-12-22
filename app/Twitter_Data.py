@@ -29,7 +29,7 @@ class TwitterData:
             tweet_id = result.id_str
             user_id = result.user.id_str
             username = self.api.get_user(user_id).screen_name
-            #print("\n", time_stamp)
+            print("\n", time_stamp)
             retweets = int(result.retweet_count)
             favourites = int(result.favorite_count)
             verified = result.user.verified

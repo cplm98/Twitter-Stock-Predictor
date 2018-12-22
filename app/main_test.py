@@ -4,7 +4,7 @@ from app.Stock_Data import StockData
 import config
 
 tweets = True
-stocks = True
+stocks = False
 
 db = DBManager(r'C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\app\DB\database.db')
 db.create_tables()
@@ -14,7 +14,7 @@ if tweets:
                           config.twitter_access_token_secret, config.aylien_app_id, config.aylien_api_key)
     twitter.twitter_search('TSLA', 25)  # I think I run into aylien rate limits if I do more than 25 at a time
     twitter.clean_data()
-    db.store_tweet(twitter.twitter_data_list)
+    #db.store_tweet(twitter.twitter_data_list)
 
 if stocks:
     stock = StockData("TSLA", "15min")
