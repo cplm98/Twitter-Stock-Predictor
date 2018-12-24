@@ -40,13 +40,5 @@ class TwitterData:
             print("\n", tweet_body)
 
 
-twitter = TwitterData(config.twitter_consumer_key, config.twitter_consumer_secret, config.twitter_access_token,
-                      config.twitter_access_token_secret, config.aylien_app_id, config.aylien_api_key)
-twitter.twitter_search('TSLA', 25)  # I think I run into aylien rate limits if I do more than 25 at a time
-twitter.clean_data()
-db = DBManager(r'C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\app\DB\database.db')
-db.create_tables()
-db.store_tweet(twitter.twitter_data_list)
-
 
 

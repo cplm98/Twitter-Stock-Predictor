@@ -16,8 +16,16 @@ class DBManager:
     def create_tables(self):
         self.c.execute("CREATE TABLE IF NOT EXISTS Tweets(time_stamp STRING, tweet_id STRING, user_id STRING, username String, tweet_body TEXT, retweets INTEGER, "
                        "favourites INTEGER, verified BOOLEAN, follower_count INTEGER, sentiment_confidence INTEGER)")  # convert confidence into an int
-        #c.execute("CREATE TABLE IF NOT EXISTS Stock_Data(time_stamp STRING, close_price INTEGER)") #don't know what data I'm gonna use yet
+        self.c.execute("CREATE TABLE IF NOT EXISTS Stock_Data(time_stamp STRING, open_price INTEGER, close_price INTEGER)") #don't know what data I'm gonna use yet
         self.conn.commit()
+
+    def store_stock_data(self, data_list):
+        for data in data_list:
+            if not self.entry_exists(data[0]):
+                self.c.execute("INSERT INTO Stock_Data VALUES(?, ?, ?)", (data[0], data[1], data[2]))
+            else:
+                print("duplicate")
+        self.conn.commit()  # really gotta stop forgetting to commit things
 
     def store_tweet(self, data_list):  # tweet_body, retweets, favourites, verified, follower_count, sentiment_confidence):
         for data in data_list:
@@ -29,6 +37,14 @@ class DBManager:
 
     def tweet_exists(self, tweet_id):
         self.c.execute("SELECT tweet_body FROM Tweets WHERE (tweet_id=?)", (tweet_id,))
+        entry = self.c.fetchone()
+        if entry is None:
+            return False
+        else:
+            return True
+
+    def entry_exists(self, time_stamp):
+        self.c.execute("SELECT time_stamp FROM Stock_Data WHERE (time_stamp=?)", (time_stamp,))
         entry = self.c.fetchone()
         if entry is None:
             return False
