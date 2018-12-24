@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f45a64b-cade-46fc-a1be-8e8397685e1a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/main_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/flask_config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/DB/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/app/DB/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/DB_Manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/DB_Manager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Stock_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/Stock_Data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Twitter_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/Twitter_Data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DB_Manager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DB_Manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/DB_Manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="e#35#49#0" expanded="true" />
               </folding>
@@ -46,8 +45,8 @@
       <file leaf-file-name="Twitter_Data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Twitter_Data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+            <state relative-caret-position="398">
+              <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -55,13 +54,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_test.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main_test.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/main_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flask_config.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/flask_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,15 +110,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
               <caret line="26" selection-start-line="22" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tensor_Flow.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Tensor_Flow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -104,7 +133,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="TensorFlow-Start" />
       </map>
     </option>
   </component>
@@ -119,20 +148,23 @@
         <option value="$PROJECT_DIR$/320_Sentiment.py" />
         <option value="$PROJECT_DIR$/Sentiment_Analysis.py" />
         <option value="$PROJECT_DIR$/DB_Manager.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/Twitter_Data.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/app/Twitter_Data.py" />
-        <option value="$PROJECT_DIR$/app/main_test.py" />
         <option value="$PROJECT_DIR$/app/Stock_Data.py" />
         <option value="$PROJECT_DIR$/app/DB_Manager.py" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/app/flask_config.py" />
+        <option value="$PROJECT_DIR$/app/views.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/app/main_test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4236" />
-    <option name="width" value="1530" />
+    <option name="x" value="4086" />
+    <option name="width" value="1680" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
@@ -319,23 +351,28 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4236" y="0" width="1530" height="1056" extended-state="0" />
+    <frame x="4086" y="0" width="1680" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11058981" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4961915" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1278928" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2600653" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3297062" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32973805" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990755" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4961915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11058981" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990755" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32973805" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,30 +406,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="added the gitignore and moved all api keys to the config file." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Sentiment_Analysis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Stock_Data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DB_Manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="e#35#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Twitter_Data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -629,20 +642,10 @@
     <entry file="file://$PROJECT_DIR$/twitterData2.csv" />
     <entry file="file://$PROJECT_DIR$/Create_Sentiment_for_320" />
     <entry file="file://$PROJECT_DIR$/320_Sentiment.py" />
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Tensor_Flow.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -660,20 +663,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/main_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Twitter_Data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+        <state relative-caret-position="398">
+          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -692,10 +685,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/DB_Manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="e#35#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/flask_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
