@@ -1,0 +1,37 @@
+h1 {
+    color: red;
+}
+
+.pre-scrollable{
+    border-style: solid;
+    border-width: 2px;
+    max-height: 75vh;
+}
+
+.tweet-body{
+
+}
+
+.tab-pane{
+    max-height:100%;
+}
+
+.tweet-container{
+    border-style: solid;
+    outline: 1px solid;
+    border-width: 1px 1px 1px 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 0px;
+}
+
+.tab-content {
+    padding: 0;
+    max-height: 100%;
+ //this has no effect on the height of the scrollable bar
+
+}
+
+.tweet-body{
+   padding: 5px;
+}

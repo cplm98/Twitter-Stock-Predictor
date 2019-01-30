@@ -8,6 +8,8 @@ stocks = True
 
 db = DBManager(r'C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\app\DB\database.db')
 db.create_tables()
+data = db.get_ten_tweets()
+print(data)
 
 if tweets:
     twitter = TwitterData(config.twitter_consumer_key, config.twitter_consumer_secret, config.twitter_access_token,
@@ -21,3 +23,7 @@ if stocks:
     stock.clean_stock_data(stock.get_stock_data())
     print(stock.data_list)
     db.store_stock_data(stock.data_list)
+
+# tweets = db.get_ten_tweets()
+# for tweet in tweets:
+#     print(tweet[4])

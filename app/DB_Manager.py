@@ -1,5 +1,6 @@
 # check in other project to see if
 import sqlite3
+from datetime import datetime, timedelta
 from sqlite3 import Error
 
 
@@ -24,7 +25,7 @@ class DBManager:
             if not self.entry_exists(data[0]):
                 self.c.execute("INSERT INTO Stock_Data VALUES(?, ?, ?)", (data[0], data[1], data[2]))
             else:
-                print("duplicate")
+                print("stock duplicate")
         self.conn.commit()  # really gotta stop forgetting to commit things
 
     def store_tweet(self, data_list):  # tweet_body, retweets, favourites, verified, follower_count, sentiment_confidence):
@@ -51,8 +52,56 @@ class DBManager:
         else:
             return True
 
+    def get_ten_tweets(self):
+        self.c.execute("SELECT * FROM Tweets")
+        data = self.c.fetchmany(10)
+        return data
 
-# db = DBManager('C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\DB\database.db')
+    def scatter_format(self, dates, prices):
+        newlist = []
+        i = 0
+        for h, w in zip(dates, prices):
+            newlist.append({'x': i, 'y': w})
+            i = i + 1 # could not get the times to work for the life of me so work on that later
+        ugly_blob = str(newlist).replace('\'', '')
+        return ugly_blob
+
+    def scatter_formate2(self, dates, prices): # this gets the data to look completely right idk what the problem is now
+        newlist = []
+        for h, w in zip(dates, prices):
+            newlist.append({'t': 'moment().toDate(' + h + ')', 'y': w})
+            #newlist.append({'x': h, 'y': w})
+        print(newlist)
+        ugly_blob = str(newlist).replace('\'', '')
+        print(ugly_blob)
+        return ugly_blob
+
+    def get_todays_data(self):
+        prices = []
+        dates = []
+        self.c.execute("SELECT * FROM Stock_Data ORDER BY date(time_stamp) DESC")
+        data = self.c.fetchmany(28)
+        print("todays date: ", datetime.today().date())
+        for obj in data:
+            date = datetime.strptime(obj[0], '%Y-%m-%d %H:%M:%S')
+            print(date)
+            if date.date() == datetime.today().date() - timedelta(days=1):
+                dates.append(str(date.time()))
+                prices.append(obj[1]/100)
+        print(dates)
+        return self.scatter_format(dates, prices)
+
+    def test_stock_data(self):
+        self.c.execute("SELECT time_stamp close_price FROM Stock_Data")
+        data = self.c.fetchmany(28)
+        return data
+
+
+
+
+
+
+# db = DBManager(r'C:\Projects\Twitter Stock Predictor\Twitter-Stock-Predictor\app\DB\database.db')
 # db.create_tables()
-# db.store_tweet([('whatever', 'this is the tweet', 75, 34, True, 47, 'whatever', 69)])
-
+# data = db.get_todays_data()
+# print(data)
